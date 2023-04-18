@@ -3,10 +3,10 @@ package com.spring.core.chap02;
 public class EsternRestaurant implements Restaurant {
 
     // 쉐프
-    private Chef chef = new KimuraChef();
+    private Chef chef;
 
     // 요리 코스
-    private Course course = new FrenchCourse();
+    private Course course;
 
     // 요리를 주문하는 기능
     public void order() {

@@ -1,5 +1,11 @@
 package com.spring.core.chap01;
 
+/**
+ * @problem - 호텔 클래스에서 직접 객체를 생성하면
+ *              나중에 의존 객체를 변경해야 될때
+ *              직접 호텔 크래스를 수정해야 되므로
+ *              OCP를 위반하게 됨.
+ */
 public class Hotel {
     // OCP위반
 

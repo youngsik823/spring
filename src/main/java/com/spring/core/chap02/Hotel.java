@@ -11,6 +11,19 @@ public class Hotel {
     // 헤드 쉐프
     private Chef headChef;
 
+    // 생성자 주입
+    public Hotel(Restaurant restaurant, Chef headChef) {
+        this.restaurant = restaurant;
+        this.headChef = headChef;
+    }
+    // 수정자 주입
+    public void setHeadChef(Chef headChef) {
+        this.headChef = headChef;
+    }
+
+    public void setRestaurant(Restaurant restaurant) {
+        this.restaurant = restaurant;
+    }
 
     // 호텔의 정보를 알려주는 기능
     public void inform() {

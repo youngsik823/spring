@@ -5,6 +5,8 @@ package com.spring.core.chap01;
  *              나중에 의존 객체를 변경해야 될때
  *              직접 호텔 크래스를 수정해야 되므로
  *              OCP를 위반하게 됨.
+ *              그리고 hreadChef가 변경되면 레스토랑 안에
+ *              쉐프도 같이 바뀌어야 할 때 2군데를 수정해야 함
  */
 public class Hotel {
     // OCP위반

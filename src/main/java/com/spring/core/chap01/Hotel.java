@@ -12,10 +12,10 @@ public class Hotel {
     // OCP위반
 
     // 레스토랑 객체에 의존
-    private Restaurant restaurant;
+    private Restaurant restaurant = new WesternRestaurant();
 
     // 헤드 쉐프
-    private Chef headChef;
+    private Chef headChef = new JannChef();
 
 
     // 호텔의 정보를 알려주는 기능

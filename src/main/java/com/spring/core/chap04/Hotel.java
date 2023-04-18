@@ -3,6 +3,7 @@ package com.spring.core.chap04;
 
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 
@@ -21,7 +22,7 @@ public class Hotel {
 
     // 생성자 주입
     @Autowired // 컨테이너에 등록된 객체를 알아서 주입좀 해줘
-    public Hotel(Restaurant restaurant, Chef headChef) {
+    public Hotel(Restaurant restaurant, @Qualifier("kc") Chef headChef) {
         this.restaurant = restaurant;
         this.headChef = headChef;
     }

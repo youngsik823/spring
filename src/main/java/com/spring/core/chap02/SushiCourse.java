@@ -2,6 +2,7 @@ package com.spring.core.chap02;
 
 public class SushiCourse implements Course {
 
+    @Override
     public void combineMenu() {
         System.out.println("====== 스시 코스 구성 ======");
         System.out.println("1. 대합 맑은국");

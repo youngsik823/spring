@@ -9,19 +9,28 @@ public class HotelManager {
 
     // 쉐프 객체를 생성
     public Chef chef() {
-        return new KimuraChef();
+        return new JannChef();
     }
     // 코스 객체를 생성
     public Course course() {
-        return new SushiCourse();
+        return new FrenchCourse();
     }
     // 레스토랑 객체를 생성
     public Restaurant restaurant() {
-        return new EsternRestaurant(chef(), course());
+        return new WesternRestaurant(chef(), course());
     }
     // 호텔 객체를 생성
     public Hotel hotel() {
-        return new Hotel(restaurant(), chef());
+
+        // 생성자 주입
+//        return new Hotel(restaurant(), chef());
+
+        // 수정자 주입
+        Hotel hotel = new Hotel();
+        hotel.setRestaurant(restaurant());
+        hotel.setHeadChef(chef());
+
+        return hotel;
     }
 
 

@@ -10,6 +10,7 @@ public class CoreApplication {
 //		SpringApplication.run(CoreApplication.class, args);
 
 		System.out.println("안녕하세요");
+
 	}
 
 }

@@ -9,9 +9,10 @@ class HotelManagerTest {
 
     @Test
     void diTest() {
-        HotelManager manager = new HotelManager();
-        Hotel hotel = new Hotel();
 
+        HotelManager manager = new HotelManager();
+        Hotel hotel = manager.hotel();
+        hotel.inform();
     }
 
 }

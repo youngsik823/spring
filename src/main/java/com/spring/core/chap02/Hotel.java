@@ -2,7 +2,8 @@ package com.spring.core.chap02;
 
 
 public class Hotel {
-    // OCP위반
+    // 제어의 역전(IoC) : 객체 생성의 제어권을 외부로 넘긴다.
+    // 의존성 주입(DI) : 외부에서 생성된 객체를 주입받는 개념
 
     // 레스토랑 객체에 의존
     private Restaurant restaurant;
